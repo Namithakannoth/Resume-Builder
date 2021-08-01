@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container" align="center" style="backgroundcolor:grey">
+        <div class="col-md-6">
+            <form action="" method="POST">
+                {% csrf_token %}
+
+               Name:<input type="text" name="name" id="" class="form-control">
+               Age:<input type="number" name="age" id="" class="form-control">
+               Email-ID:<input type="email" name="emailid" id="" class="form-control">
+               Phoneno:<input type="number" name="phoneno" id="" class="form-control">
+               Gender:<input type="text" name="gender" id="" class="form-control">
+               Address:<textarea type="text" name="address" id="" class="form-control"></textarea>
+               DOB:<input type="date" name="dob" id="" class="form-control">
+               Technical Skills:<input type="text" name="technicalskills" id="" class="form-control">
+               Projects:<input type="text" name="projects" id="" class="form-control">
+               Internship:<input type="text" name="internship" id="" class="form-control">
+               School Name:<input type="text" name="schoolname" id="" class="form-control">
+               School Qualification:<input type="text" name="schoolqualification" id="" class="form-control">
+               School Duration:<input type="number" name="schoolduration" id="" class="form-control">
+               School Percentage:<input type="number" name="schoolpercentage" id="" class="form-control">
+               College Name:<input type="text" name="collegename" id="" class="form-control">
+               College Qualification:<input type="text" name="collegequalification" id="" class="form-control">
+               College Duration:<input type="number" name="collegeduration" id="" class="form-control">
+               college Percentage:<input type="number" name="collegepercentage" id="" class="form-control">
+               Graduate College Name:<input type="text" name="graduatecollegename" id="" class="form-control">
+               Graduate College Qualification:<input type="text" name="graduatecollegequalification" id="" class="form-control">
+               Graduate College Duration:<input type="number" name="graduatecollegeduration" id="" class="form-control">
+               Graduate Percentage:<input type="number" name="graduatepercentage" id="" class="form-control">
+               Hobbies:<input type="text" name="hobbies" id="" class="form-control">
+               Languages:<input type="text" name="languages" id="" class="form-control">
+               Nationality:<input type="text" name="nationality" id="" class="form-control">
+               Certification:<input type="text" name="certification" id="" class="form-control">
+               State:<input type="text" name="state" id="" class="form-control">
+               Marital Status:<input type="text" name="maritalstatus" id="" class="form-control">
+               Summary:<textarea type="text" name="summary" id="" class="form-control"></textarea><br>
+               <input type="submit" class="btn btn-success">
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

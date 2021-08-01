@@ -1,0 +1,66 @@
+{% extends "easy_pdf/base.html" %}
+
+
+{% block content %}
+
+
+<h2 style="font-size: 30px; font-family: sans-serif; color:black">{{resume.name}}</h2>
+<h3><i>Web Developer</i></h3>
+<h3>{{resume.emailid}}</h3>
+<h3>{{resume.phoneno}}</h3>
+<h3>{{resume.address}}</h3>
+<div style="width: 1500px; background-color: black; height: 2px;"></div>
+<h2 style="font-size: 20px; font-family: sans-serif; color: black;"><u>Summary</u></h2>
+<h3 class="summary">{{resume.summary}}</h3>
+<h2 style="font-size: 20px; font-family: sans-serif; color: black;"><u>School Education Details</u></h2>
+<h3>School Name:{{resume.schoolname}}</h3>
+<h3>School Timeline:{{resume.schoolqualification}}</h3>
+<h3>School Duration:{{resume.schoolduration}} years</h3>
+<h3>School Percentage:{{resume.schoolpercentage}} %</h3>
+
+
+<h2 style="font-size: 20px; font-family: sans-serif; color: black;"><u>College Education Details</u></h2>
+<h3>College Name:{{resume.collegename}}</h3>
+<h3>College Timeline:{{resume.collegequalification}}</h3>
+<h3>College Duration:{{resume.collegeduration}} years</h3>
+<h3>College Percentage:{{resume.collegepercentage}} %</h3>
+
+
+<h2 style="font-size: 20px; font-family: sans-serif; color: black;"><u>Graduation College Education Details</u></h2>
+<h3>Graduation College Name:{{resume.graduatedcollegename}}</h3>
+<h3>Graduation College Timeline:{{resume.graduatequalification}}</h3>
+<h3>Graduation College Duration:{{resume.graduateduration}} years</h3>
+<h3>Graduation Percentage:{{resume.graduatepercentage}} %</h3>
+
+
+<h2 style="font-size: 20px; font-family: sans-serif; color: black;"><u>Technical Skills</u></h2>
+<h3>{{resume.technicalskills}}</h3>
+
+<h2 style="font-size: 20px; font-family: sans-serif; color: black;"><u>Realtime Projects</u></h2>
+<ul>
+    <li><pre><h3>{{resume.projects}}</h3></pre></li>
+</ul>
+
+<h2 style="font-size: 20px; font-family: sans-serif; color: black;"><u>Internship</u></h2>
+<h3>Company:{{resume.internship}}</h3>
+
+<h2 style="font-size: 20px; font-family: sans-serif; color: black;"><u>Certification</u></h2>
+<h3>{{resume.certification}}</h3>
+
+<h2 style="font-size: 20px; font-family: sans-serif; color: black;"><u>Personal Details</u></h2>
+<h3><span style="color: black; font-size: 20px; font-family:'Times New Roman', Times, serif;">Name:</span>{{resume.name}}</h3>
+<h3><span style="color: black; font-size: 20px; font-family:'Times New Roman', Times, serif;">Age:</span>{{resume.age}}</h3>
+<h3><span style="color: black; font-size: 20px; font-family:'Times New Roman', Times, serif">Gender:</span>{{resume.gender}}</h3>
+<h3><span style="color: black; font-size: 20px; font-family:'Times New Roman', Times, serif">DOB:</span>{{resume.dob}}</h3>
+<h3><span style="color: black; font-size: 20px; font-family:'Times New Roman', Times, serif">State:</span>{{resume.state}}</h3>
+<h3><span style="color: black; font-size: 20px; font-family:'Times New Roman', Times, serif">Marital Status: </span>{{resume.maritalstatus}}</h3>
+<h3><span style="color: black; font-size: 20px; font-family:'Times New Roman', Times, serif">Hobbies: </span>{{resume.hobbies}}</h3>
+<h3><span style="color: black; font-size: 20px; font-family:'Times New Roman', Times, serif">Languages Known:</span>{{resume.languagesknown}}</h3>
+
+<h2 style="font-size: 20px; font-family: sans-serif; color: black;"><u>Declaration</u></h2>
+<h3>I hereby certify that all the above details are correct</h3>
+<h4>Rohith Sharma.P</h4>
+<h4>06-07-2021</h4>
+
+
+{% endblock %}

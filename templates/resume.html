@@ -1,0 +1,70 @@
+{%  load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="=stylesheet" href="{% static "style.css " %}">
+
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="font-size: 30px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:black">{{resumedetail.name}}</h2>
+    <h3>{{resumedetail.emailid}}</h3>
+    <h3>{{resumedetail.phoneno}}</h3>
+    <h3>{{resumedetail.address}}</h3><hr>
+    <h2 style="font-size: 30px; font-family:'Times New Roman', Times, serif; color:black;">Summary</h2>
+    <h3 class="summary">{{resumedetail.summary}}</h3>
+    <hr>
+
+    <h2 style="font-size: 30px; font-family:'Times New Roman', Times, serif; color: black;">School Education Details</h2>
+    <h3>Percentage Secured:{{resumedetail.schoolpercentage}}</h3>
+    <h3>School Name:{{resumedetail.schoolname}}</h3>
+    <h3>School Timeline:{{resumedetail.schoolqualification}}</h3>
+    <h3>School Duration:{{resumedetail.schoolduration}} years</h3>
+    <hr>
+
+    <h2 style="font-size: 30px; font-family:'Times New Roman', Times, serif; color: black;">College Education Details</h2>
+    <h3>Percentage Secured:{{resumedetail.collegename}}</h3>
+    <h3>College Name:{{resumedetail.collegename}}</h3>
+    <h3>College Timeline:{{resumedetail.collegequalification}}</h3>
+    <h3>College Duration:{{resumedetail.collegeduration}} years</h3>
+    <hr>
+
+
+    <h2 style="font-size: 30px; font-family:'Times New Roman', Times, serif; color: black;">Technical Skills</h2>
+    <h3>{{resumedetail.technicalskills}}</h3><hr>
+
+    <h2 style="font-size: 30px; font-family:'Times New Roman', Times, serif; color: black;">Realtime Projects</h2>
+    <ul>
+        <li><pre><h3>{{resumedetail.projects}}</h3></pre></li>
+    </ul>
+    <hr>
+    <h2 style="font-size: 30px; font-family:'Times New Roman', Times, serif; color: black;">Internship</h2>
+    <h3>Company:{{resumedetail.internship}}</h3><hr>
+
+    <h2 style="font-size: 30px; font-family:'Times New Roman', Times, serif; color: black;">Certification</h2>
+    <h3>{{resumedetail.certification}}</h3><hr>
+
+    <h2 style="font-size: 30px; font-family: sans-serif; color: black;">Personal Details</h2>
+    <h3><span style="color: black; font-size: 20px; font-family: sans-serif;">Name:</span>{{resumedetail.name}}</h3>
+    <h3><span style="color: black; font-size: 20px; font-family: sans-serif;">Age:</span>{{resumedetail.age}}</h3>
+    <h3><span style="color: black; font-size: 20px; font-family: sans-serif;">Gender:</span>{{resumedetail.gender}}</h3>
+    <h3><span style="color: black; font-size: 20px; font-family: sans-serif;">DOB:</span>{{resumedetail.dob}}</h3>
+    <h3><span style="color: black; font-size: 20px; font-family: sans-serif;">State:</span>{{resumedetail.state}}</h3>
+    <h3><span style="color: black; font-size: 20px; font-family: sans-serif;">Marital Status</span>{{resumedetail.maritalstatus}}</h3>
+    <h3><span style="color: black; font-size: 20px; font-family: sans-serif;">Hobbies</span>{{resumedetail.hobbies}}</h3>
+    <h3><span style="color: black; font-size: 20px; font-family: sans-serif;">Languages Known:</span>{{resumedetail.languagesknown}}</h3>
+
+    <hr>
+    <h2 style="font-size: 30px; font-family: sans-serif; color: black;">Declaration</h2>
+    <h3>I hereby certify that all the above details are correct to the best of my knowledge and belief</h3>
+    <h4>{{resumedetail.name}}</h4>
+    <h4>7/07/2021</h4>
+
+
+
+
+</body>
+</html>

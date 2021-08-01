@@ -1,0 +1,10 @@
+Collecting xhtml2pdf
+  Using cached xhtml2pdf-0.2.5.tar.gz (100 kB)
+Collecting html5lib>=1.0
+  Using cached html5lib-1.1-py2.py3-none-any.whl (112 kB)
+Collecting pyPdf2
+  Using cached PyPDF2-1.26.0.tar.gz (77 kB)
+Collecting Pillow
+  Downloading Pillow-8.3.1-cp39-cp39-win_amd64.whl (3.1 MB)
+Collecting reportlab>=3.3.0
+  Downloading reportlab-3.5.68-cp39-cp39-win_amd64.whl (2.3 MB)
